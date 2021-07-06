@@ -29,15 +29,13 @@ const Pip = styled.div`
 `;
 
 const Avatar: React.FC<AvatarProps> = ({ profile }) => {
-  const { username = "Bunny", image, profileLink, noProfileLink, showPip = false } = profile;
+  const { username = "Cow", image, profileLink, noProfileLink, showPip = false } = profile;
   const link = profile.username ? profileLink : noProfileLink;
   const isExternal = link.startsWith("http");
   const ariaLabel = "Link to profile";
-  const icon = image ? (
+  const icon = image ?? (
     <img src={image} alt="profile avatar" height="32px" width="32px" />
-  ) : (
-    <NoProfileAvatar width="32px" height="32px" />
-  );
+  )
 
   if (isExternal) {
     return (
