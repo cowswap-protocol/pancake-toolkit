@@ -5,7 +5,7 @@ import Text from "../../../components/Text/Text";
 import Skeleton from "../../../components/Skeleton/Skeleton";
 
 interface Props {
-  cakePriceUsd?: number;
+  cakePriceUsd: string | number | undefined;
 }
 
 const PriceLink = styled.a`
