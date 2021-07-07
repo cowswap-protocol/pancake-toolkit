@@ -5,6 +5,7 @@ import { LogoIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
 import MenuButton from "./MenuButton";
+import Text from "../../../components/Text/Text";
 
 interface Props {
   isPushed: boolean;
@@ -30,6 +31,8 @@ const StyledLink = styled(Link)`
   .desktop-icon {
     width: 160px;
     display: none;
+    height: 40px;
+    width: 40px;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: block;
     }
@@ -54,6 +57,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
     <>
       <LogoIcon className="mobile-icon" />
       <LogoWithText className="desktop-icon" isDark={isDark} />
+      <Text bold>Cowswap</Text>
     </>
   );
 
