@@ -52,6 +52,26 @@ export const links = [
     href: "/lottery",
   },
   {
+    label: "POT",
+    icon: "MiningIcon",
+    href: "/lottery",
+  },
+  {
+    label: "Liquidity",
+    icon: "LiquidityIcon",
+    href: "/lottery",
+  },
+  {
+    label: "Cowboy",
+    icon: "CowboyIcon",
+    href: "/lottery",
+  },
+  {
+    label: "LimitOrder",
+    icon: "LimitOrderIcon",
+    href: "/lottery",
+  },
+  {
     label: "NFT",
     icon: "NftIcon",
     href: "/nft",
