@@ -102,6 +102,7 @@ export const links = [
   {
     label: "Info",
     icon: "InfoIcon",
+    initialOpenState: true,
     items: [
       {
         label: "Overview",
